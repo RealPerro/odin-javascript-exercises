@@ -11,9 +11,12 @@ const sumAll = function(int1, int2) {
     bigNum = Math.max(int1, int2);
     smallNum = Math.min(int1, int2);
 
+    /*
     for (let i = smallNum; i <= bigNum; i++) {
         total += i;
     }
+    */
+
     total2 = (bigNum-smallNum+1) * (bigNum-smallNum+2) / 2
 
 
