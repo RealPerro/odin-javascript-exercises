@@ -2,6 +2,7 @@ const caesar = function(text, shift) {
     
     if (shift == 0) {return text;}
 
+    //normalizes big shift numbers
     shift = shift % 26;
 
     const shiftChar = function(char) {
@@ -30,6 +31,7 @@ const caesar = function(text, shift) {
         let newChar = String.fromCharCode(newCode);
         return newChar;
     }
+
     let encriptedText = text.replace(/[A-Za-z]/gi, shiftChar );
 
     return encriptedText;
